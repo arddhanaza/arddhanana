@@ -1,0 +1,319 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FCFCFC;
+}
+
+.bar {
+  width: 53px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-right: 0px;
+}
+
+header {
+  margin-top: 1%;
+}
+
+.btn-bar {
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.brandnav {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.15em;
+}
+
+.nav-link {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: 0.15em !important;
+  margin-left: 50px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.background-text {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 149px;
+  letter-spacing: -0.15em;
+  color: #F4F4F4;
+  width: 600px;
+  z-index: -2;
+  position: absolute;
+}
+
+a:hover {
+  color: #5AB0FF !important;
+}
+
+a:visited {
+  color: black;
+}
+
+.section {
+  position: relative;
+  margin-top: 8%;
+}
+
+.text {
+  position: absolute;
+  left: 30%;
+}
+.text .text-p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+}
+
+.section-ttgsaya {
+  position: relative;
+  z-index: 0;
+  height: 341px;
+}
+.section-ttgsaya .ttgsaya-text {
+  color: #000000;
+  z-index: 1;
+}
+.section-ttgsaya .ttgsaya-text p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+  width: 40%;
+}
+
+.section-kontak {
+  position: relative;
+  z-index: 0;
+  height: 400px;
+}
+.section-kontak .kontak-text {
+  color: #000000;
+}
+.section-kontak .kontak-text p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+}
+
+.section-header {
+  height: 445px;
+  background-color: #5AB0FF;
+  z-index: 0;
+}
+.section-header .header-text {
+  color: white;
+  z-index: 1;
+  bottom: 10%;
+}
+.section-header .header-text h1 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 119px;
+  letter-spacing: 0.5em;
+}
+.section-header .header-text p {
+  width: 15%;
+}
+.section-header .header-img {
+  height: 503px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Libre Baskerville", serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.portofolio {
+  background-color: #E5E5E5;
+}
+.portofolio .section-portofolio {
+  margin-top: 5% !important;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.portofolio .section-portofolio .row {
+  margin-bottom: 3%;
+}
+.portofolio .section-portofolio .row .portofolio-foto img {
+  width: 100%;
+}
+.portofolio .section-portofolio .row .portofolio-card {
+  background-color: #5AB0FF;
+  color: white !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+.portofolio .section-portofolio .row .portofolio-card .head-porto {
+  background-color: transparent !important;
+  border: none;
+  margin-bottom: 0 !important;
+}
+.portofolio .section-portofolio .row .portofolio-card .head-porto h3 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 45px;
+  letter-spacing: 0.15em;
+}
+.portofolio .section-portofolio .row .portofolio-card .body-porto span {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.15em;
+}
+.portofolio .section-portofolio .row .portofolio-card .body-porto p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.15em;
+  position: absolute;
+  bottom: 5%;
+  width: 227px;
+}
+
+.footer {
+  background-color: #5AB0FF;
+}
+.footer .footer-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+  color: white;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+  .background-text {
+    display: none !important;
+  }
+
+  .section {
+    position: relative;
+    margin-top: 8%;
+  }
+
+  .text {
+    position: relative;
+    left: 0 !important;
+    padding-left: 10%;
+  }
+  .text .text-p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+  }
+
+  .section-ttgsaya {
+    z-index: 0;
+  }
+  .section-ttgsaya .ttgsaya-text {
+    color: #000000;
+    z-index: 1;
+  }
+  .section-ttgsaya .ttgsaya-text p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    width: 100%;
+  }
+
+  .section-kontak {
+    z-index: 0;
+  }
+  .section-kontak .kontak-text {
+    color: #000000;
+  }
+  .section-kontak .kontak-text p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+  }
+
+  .section-header {
+    margin-top: 8%;
+    position: relative;
+    height: 600px;
+    background-color: #5AB0FF;
+    z-index: 0;
+  }
+  .section-header .header-text {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+  }
+  .section-header .header-text h1 {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 119px;
+    letter-spacing: 0.25em;
+    font-size: 48px;
+  }
+  .section-header .header-text p {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    width: 30%;
+  }
+  .section-header .header-img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
