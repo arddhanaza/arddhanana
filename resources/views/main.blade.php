@@ -3,6 +3,8 @@
 @section('title','arddhanaaa')
 
 @section('body')
+
+
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand brandnav" href="#">arddhanaaa</a>
@@ -66,51 +68,29 @@
 
     <section class="container-fluid portofolio" id="portofolio">
         <div class="section container section-portofolio">
-            <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-12 portofolio-foto">
-                    <img alt="" class="img-foto" src="assets/img/grup2.png">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 card portofolio-card">
-                    <div class="card-header head-porto">
-                        <div class="row">
-                            <div class="col-11">
-                                <h3>portofolio</h3>
-                            </div>
-                            <div class="col-1 p-0 pt-1">
-                                <a href=""><img src="assets/arrow.png" alt=""></a>
-                            </div>
-                        </div>
+            @foreach($portfolios as $portfolio)
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12 portofolio-foto">
+                        <img alt="" class="img-foto" src="assets/img/{{$portfolio->image}}">
                     </div>
-                    <div class="card-body body-porto">
-                        <span>stisla/ bootstrap/ scss/ user experience</span>
-                        <p>sebuah projek internal dari laboratorium. mengambil bagian sebagai project manager dan
-                            front-end
-                            developer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-12 portofolio-foto">
-                    <img alt="" class="img-foto" src="assets/img/grup3.png">
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 card portofolio-card">
-                    <div class="card-header head-porto">
-                        <div class="row">
-                            <div class="col-11">
-                                <h3>EDE Logo</h3>
-                            </div>
-                            <div class="col-1 p-0 pt-1">
-                                <a href=""><img src="assets/arrow.png" alt=""></a>
+                    <div class="col-lg-3 col-md-3 col-sm-12 card portofolio-card">
+                        <div class="card-header head-porto">
+                            <div class="row">
+                                <div class="col-11">
+                                    <h3>{{$portfolio->title}}</h3>
+                                </div>
+                                <div class="col-1 p-0 pt-1">
+                                    <a href="{{$portfolio->link}}"><img src="assets/arrow.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body body-porto">
-                        <span>branding/ logo/ </span>
-                        <p>EDE Laboratory adalah lab baru yang ada pada jurusan sistem informasi yang berfokus pada data
-                            science dan data engineering.</p>
+                        <div class="card-body body-porto">
+                            <span>{{$portfolio->type}}</span>
+                            <p>{{$portfolio->description}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
