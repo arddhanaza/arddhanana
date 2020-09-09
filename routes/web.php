@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MainController@index');
+Route::get('/', 'MainController@index')->name('index');
 
-Route::get('/add', function () {
-    return view('adddata');
-});
+Route::get('/wp/', 'MainController@addData')->name('add');
 
+Route::post('/wp/up/', 'MainController@uploadData')->name('wpupload');
 

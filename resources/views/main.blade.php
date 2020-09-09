@@ -71,7 +71,7 @@
             @foreach($portfolios as $portfolio)
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-12 portofolio-foto">
-                        <img alt="" class="img-foto" src="assets/img/{{$portfolio->image}}">
+                        <img alt="" class="img-foto" src="img/{{$portfolio->image}}">
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 card portofolio-card">
                         <div class="card-header head-porto">

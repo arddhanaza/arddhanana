@@ -16,27 +16,28 @@
                     </h1>
                 </div>
                 <div class="card-body">
-                    <form action="">
+                    <form action="{{route('wpupload')}}" method="post" enctype="multipart/form-data">
                         {{--                            title, type, description, image, link--}}
+                        @csrf
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="text" class="form-control" id="title" placeholder="Title">
+                            <input type="text" class="form-control" id="title" placeholder="Title" name="title">
                         </div>
                         <div class="form-group">
                             <label for="type">Type</label>
-                            <input type="text" class="form-control" id="type" placeholder="branding/ logo/">
+                            <input type="text" class="form-control" id="type" placeholder="branding/ logo/" name="type">
                         </div>
                         <div class="form-group">
-                            <label for="desc">Description</label>
-                            <textarea name="desc" id="desc" cols="30" rows="10" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est ex labore laborum placeat quaerat similique unde, voluptate voluptatem voluptatibus.</textarea>
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" cols="30" rows="10" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est ex labore laborum placeat quaerat similique unde, voluptate voluptatem voluptatibus.</textarea>
                         </div>
                         <div class="form-group">
                             <label for="img">Image</label>
-                            <input type="file" class="form-control" id="img">
+                            <input type="file" class="form-control" id="img" name="image">
                         </div>
                         <div class="form-group">
                             <label for="link">Link</label>
-                            <input type="text" class="form-control" id="link" placeholder="insert link">
+                            <input type="text" class="form-control" id="link" placeholder="insert link" name="link">
                         </div>
                         <div class="form-group mt-5">
                             <button type="submit" class="form-control btn btn-primary">Add</button>
