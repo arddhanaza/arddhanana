@@ -8,7 +8,7 @@
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand brandnav" href="#">arddhanaaa</a>
-            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            <button aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"
                     class="navbar-toggler btn-bar border-0" data-target="#navbarSupportedContent" data-toggle="collapse"
                     type="button">
                 <!--                        <span class="fa fa-bars"></span>-->
@@ -71,7 +71,8 @@
             @foreach($portfolios as $portfolio)
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-12 portofolio-foto">
-                        <img alt="" class="img-foto" src="img/{{$portfolio->image}}">
+                        <img alt="" onerror="this.src='img/default-img.jpg'" class="img-foto"
+                             src="img/{{$portfolio->image}}">
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 card portofolio-card">
                         <div class="card-header head-porto">
@@ -80,7 +81,8 @@
                                     <h3>{{$portfolio->title}}</h3>
                                 </div>
                                 <div class="col-1 p-0 pt-1">
-                                    <a href="{{$portfolio->link}}"><img src="assets/arrow.png" alt=""></a>
+                                    <a href="{{$portfolio->link}}" target="_blank"><img src="assets/arrow.png"
+                                                                                        alt=""></a>
                                 </div>
                             </div>
                         </div>
