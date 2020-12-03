@@ -84,6 +84,10 @@ a:visited {
   letter-spacing: 0.15em;
 }
 
+#ttg-saya {
+  scroll-margin-top: 200px;
+}
+
 .section-ttgsaya {
   position: relative;
   z-index: 0;

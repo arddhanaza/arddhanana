@@ -3,9 +3,7 @@
 @section('title','arddhanaaa')
 
 @section('body')
-
-
-    <header class="container">
+    <header class="fixed-top mt-0 p-2 px-5 bg-light">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand brandnav" href="#">arddhanaaa</a>
             <button aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"
@@ -36,7 +34,7 @@
             </div>
         </nav>
     </header>
-    <section class="container header" id="header-cover">
+    <section class="container header pt-5" id="header-cover">
         <div class="col-lg-12 col-md-12 col-sm-12 section section-header">
             <div class="text header-text">
                 <h1>HALO,</h1>
@@ -97,29 +95,29 @@
     </section>
 
     <section class="container" id="kontak">
-        <div class="col-lg-12 col-md-12 col-sm-12 section section-kontak">
+        <div class="col-lg-12 col-md-12 col-sm-12 section section-kontak" id="section-kontak">
             <h1 class="background-text text-uppercase">Kon-<br>tak</h1>
             <div class="text kontak-text">
                 <p class="text-p">
                     aktif di instagram-
                     <br>
-                    <b><a href="https://instagram.com/arddhanaaa">@arddhanaaa</a></b>
+                    <b><a href="https://instagram.com/arddhanaaa" target="_blank">@arddhanaaa</a></b>
                     <br><br>
                     dapat dihubungi melalui-
                     <br>
-                    <b><a href="mailto: zafarddhana@gmail.com">zafarddhana@gmail.com</a></b>
+                    <b><a href="mailto: arddhanaza99@gmail.com" target="_blank">arddhanaza99@gmail.com</a></b>
                     <br><br>
-                    juga memiliki akun dribble:
+                    juga memiliki akun dribbble:
                     <br>
-                    <b><a href="https://dribble.com/arddhanaza">arddhanaza</a></b>
+                    <b><a href="https://dribbble.com/arddhanaza" target="_blank">arddhanaza</a></b>
                     <br><br>
                     kunjungi juga akun behance saya-
                     <br>
-                    <b><a href="https://behance.net/arddhanazhafran">arddhanazhafran</a></b>
+                    <b><a href="https://behance.net/arddhanazhafran" target="_blank">arddhanazhafran</a></b>
                     <br><br>
                     tak lupa juga github-
                     <br>
-                    <b><a href="https://github.com/arddhanaza">arddhanaza</a></b>
+                    <b><a href="https://github.com/arddhanaza" target="_blank">arddhanaza</a></b>
                 </p>
             </div>
         </div>

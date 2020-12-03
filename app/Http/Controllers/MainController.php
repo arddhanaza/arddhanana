@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Portfolio;
 use DB;
 use Illuminate\Http\Request;
 
@@ -22,11 +21,9 @@ class MainController extends Controller
 
     public function uploadData(Request $req)
     {
-
         $this->validate($req, [
             'image' => 'file|image|mimes:jpeg,png,jpg',
         ]);
-
         $image = $req->file('image');
 
         // isi dengan nama folder tempat kemana file diupload

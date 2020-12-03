@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MainController@index')->name('index');
-
-Route::get('/wp/', 'MainController@addData')->name('add');
-
-Route::post('/wp/up/', 'MainController@uploadData')->name('wpupload');
+Route::get('/', 'PortfolioController@index')->name('index');
+Route::get('/wp/', 'PortfolioController@showAllData')->name('allData');
+Route::get('/wp/edit/{id}', 'PortfolioController@edit')->name('edit');
+Route::post('/wp/edit/{id}/save', 'PortfolioController@update')->name('editSave');
+Route::get('/wp/delete/{id}', 'PortfolioController@destroy')->name('delete');
+Route::get('/wp/add', 'PortfolioController@create')->name('add');
+Route::post('/wp/add/save/', 'PortfolioController@store')->name('wpupload');
 
