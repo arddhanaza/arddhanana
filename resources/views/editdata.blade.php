@@ -49,7 +49,7 @@
                                    value="{{$porto->link}}">
                         </div>
                         <div class="form-group mt-5">
-                            <button type="submit" class="form-control btn btn-primary">Add</button>
+                            <button type="submit" class="form-control btn btn-primary">Save</button>
                         </div>
 
                     </form>

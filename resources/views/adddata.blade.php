@@ -14,6 +14,7 @@
                     <h1 class="card-title">
                         Tambah Data
                     </h1>
+                    <a href="{{route('allData')}}" class="btn btn-primary">Kembali</a>
                 </div>
                 <div class="card-body">
                     <form action="{{route('wpupload')}}" method="post" enctype="multipart/form-data">
@@ -33,7 +34,7 @@
                         </div>
                         <div class="form-group">
                             <label for="img">Image</label>
-                            <input type="file" class="form-control" id="img" name="image">
+                            <input type="file" class="form-control" id="img" name="image" required>
                         </div>
                         <div class="form-group">
                             <label for="link">Link</label>

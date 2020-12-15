@@ -5,7 +5,7 @@
 @section('body')
     <header class="fixed-top mt-0 p-2 px-5 bg-light">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand brandnav" href="#">arddhanaaa</a>
+            <a class="navbar-brand brandnav" href="#top">arddhanaaa</a>
             <button aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"
                     class="navbar-toggler btn-bar border-0" data-target="#navbarSupportedContent" data-toggle="collapse"
                     type="button">
@@ -76,7 +76,7 @@
                         <div class="card-header head-porto">
                             <div class="row">
                                 <div class="col-11">
-                                    <h3>{{$portfolio->title}}</h3>
+                                    <h3>{{str_word_count($portfolio->title) > 4 ? substr($portfolio->title,0,30)."..." : $portfolio->title}}</h3>
                                 </div>
                                 <div class="col-1 p-0 pt-1">
                                     <a href="{{$portfolio->link}}" target="_blank"><img src="assets/arrow.png"
@@ -86,7 +86,7 @@
                         </div>
                         <div class="card-body body-porto">
                             <span>{{$portfolio->type}}</span>
-                            <p>{{$portfolio->description}}</p>
+                            <p>{{str_word_count($portfolio->description) > 15 ? substr($portfolio->description,0,150)."..." : $portfolio->description}}</p>
                         </div>
                     </div>
                 </div>
