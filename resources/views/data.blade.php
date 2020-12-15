@@ -11,6 +11,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
+                    <a href="{{route('index')}}" class="btn btn-outline-primary">Back to Index</a>
                     <h1 class="card-title">
                         Semua Portfolio
                     </h1>

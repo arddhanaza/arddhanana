@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PortfolioController@index')->name('index');
+Route::get('/wp/verify','PortfolioController@verifyData')->name('verifyData');
+Route::post('/wp/verify/check','PortfolioController@verifyDataCheck')->name('verifyDataCheck');
 Route::get('/wp/', 'PortfolioController@showAllData')->name('allData');
 Route::get('/wp/edit/{id}', 'PortfolioController@edit')->name('edit');
 Route::post('/wp/edit/{id}/save', 'PortfolioController@update')->name('editSave');

@@ -15,10 +15,14 @@ class PortfolioController extends Controller
     public function index()
     {
         $portfolios = Portfolio::all();
+        session()->forget('pass');
         return view('main', compact('portfolios'));
     }
 
     public function showAllData(){
+        if (session('pass') != true){
+            return redirect(route('index'));
+        }
         $portfolios = Portfolio::all();
         return view('data', compact('portfolios'));
     }
@@ -138,5 +142,19 @@ class PortfolioController extends Controller
         $portfolio = Portfolio::find($id);
         $portfolio->delete();
         return redirect(route('allData'));
+    }
+
+    public function verifyData(){
+        return view('validationdata');
+    }
+
+    public function verifyDataCheck(Request $request){
+        $pass = "wolffire99A!";
+        if ($request->pwd === $pass){
+            session()->put(['pass'=>true]);
+            return redirect(route('allData'));
+        }else{
+            return redirect(route('index'));
+        }
     }
 }

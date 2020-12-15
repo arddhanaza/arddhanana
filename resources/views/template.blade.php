@@ -17,7 +17,7 @@
 
 
 <footer class="text-center footer">
-    <p class="footer-text  m-0 p-3">Arddhana Zhafran Amanullah <a href="{{route('allData')}}">I</a> 2020</p>
+    <p class="footer-text  m-0 p-3">Arddhana Zhafran Amanullah <a href="{{route('verifyData')}}">I</a> 2020</p>
 </footer>
 
 
